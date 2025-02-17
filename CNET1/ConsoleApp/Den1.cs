@@ -109,6 +109,29 @@ namespace ConsoleApp
                 //    return b;
             }
         }
+
+        void DateTimes()
+        {
+            DateTime dt = new(2025, 2, 17, 14, 38, 50);
+            DateTime dt2 = new(2025, 2, 16, 14, 38, 50);
+
+
+            Console.WriteLine($"den v roce: {dt.DayOfYear}");
+            Console.WriteLine($"den v tydnu: {dt.DayOfWeek}");
+
+            DateOnly date_only = new(2025, 2, 17);
+            TimeOnly time_only = new TimeOnly(15, 22);
+
+            TimeSpan diff = dt - dt2;
+
+            DateTime x = dt + diff;
+
+            DateTime parsed = DateTime.Parse("2025-2-12");
+
+            Console.WriteLine($"parsed: {parsed}");
+
+            DateTime nyni = DateTime.Now;
+        }
     }
     enum DenVTydnu
     {

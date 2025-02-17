@@ -1,13 +1,12 @@
-﻿int Bigger(int a, int b)
+﻿int Age(DateTime birth)
 {
-       
-    //ternarni operator
-    return (a > b) ? a : b;
-    
-    //if (a > b)
-    //    return a;
-    //else
-    //    return b;
+    DateTime now = DateTime.Now;
+
+    TimeSpan diff = now - birth;
+
+    return (int)(diff.TotalDays / 365);
 }
+
+
 
 

@@ -1,36 +1,43 @@
-﻿//List<int> numbers = [2, 10, -555, 0, 12_000_000, -555];
-//List<int> numbers2 = new();
+﻿
 
 
 string[] dny = ["pondělí", "úterý", "středa", "čtvrtek",
                 "pátek", "sobota", "neděle"];
 
-string DenVTydnu(int x)
+string DenVTydnuSlovo(DenVTydnu x)
 {
-    return dny[x - 1];
+    return dny[(int)x];
 }
 
-Console.WriteLine("Zadávej číslo 1-7 nebo X pro ukončení.");
-string input = Console.ReadLine();
-
-while(input != "X")
+enum DenVTydnu
 {
-    int number = int.Parse(input);
-
-    if(number < 1 || number > 7)
-    {
-        Console.WriteLine("zadané číslo je mimo povolený rozsah");
-    }
-    else
-    {
-        string den_v_tydnu = DenVTydnu(number);
-        Console.WriteLine($"den v týdnu: {den_v_tydnu}");
-    }
-
-    Console.WriteLine("Zadávej číslo 1-7 nebo X pro ukončení.");
-    input = Console.ReadLine();
+    PONDELI,
+    UTERY,
+    STREDA,
+    CTVRTEK,
+    PATEK,
+    SOBOTA,
+    NEDELE
 }
 
-Console.WriteLine("ukončuji program");
+enum RGB
+{
+    RED = 1,
+    GREEN = 3,
+    BLUE = 5
+}
 
+enum CarBrands
+{
+    VOLVO,
+    SKODA,
+    MERCEDES,
+    FIAT
+}
 
+enum Brushes
+{
+    Violet,
+    DeepBlue,
+    DarkGreen,
+}

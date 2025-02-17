@@ -12,7 +12,7 @@ string DenVTydnuSlovo(DenVTydnu x)
 Console.WriteLine("Zadávej číslo 1-7 nebo X pro ukončení.");
 string input = Console.ReadLine();
 
-while (input != "X")
+while (input.ToUpper() != "X")
 {
     try
     {

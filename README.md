@@ -1,0 +1,2 @@
+# CNET1
+školení CNET1 2025-02

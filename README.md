@@ -11,3 +11,6 @@ Alternativní editor na práci s daty a prototypování: LINQPad https://www.lin
 [PDF úvodní prezentace](/netsharp.pdf)
 
 Toto repository si naklonujte k sobě, najdete postupně výsledky naší práce.
+
+## A tour of the C# language
+https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview

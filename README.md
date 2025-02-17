@@ -14,3 +14,6 @@ Toto repository si naklonujte k sobě, najdete postupně výsledky naší práce
 
 ## A tour of the C# language
 https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview
+
+## Interactive tutorials
+https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/

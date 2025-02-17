@@ -142,6 +142,29 @@ namespace ConsoleApp
 
             return (int)(diff.TotalDays / 365);
         }
+
+        void AgeTuple()
+        {
+            // tuple
+            (double sum, int count, bool ordered) t1 = (4.5, 3, false);
+
+            var x = t1.sum;
+            var y = x + 5.3;
+            var date_only = new DateOnly(2025, 2, 17);
+            var time_only = new TimeOnly(15, 22);
+
+            (int age, bool hadBday) Age(DateTime birth)
+            {
+                DateTime now = DateTime.Now;
+
+                var diff = now - birth;
+
+                var age = (int)(diff.TotalDays / 365);
+                var hadBday = now.DayOfYear >= birth.DayOfYear;
+
+                return (age, hadBday);
+            }
+        }
     }
     enum DenVTydnu
     {

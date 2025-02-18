@@ -8,6 +8,49 @@ namespace CarRental;
 
 class CarDataset
 {
+    public static CarDealer LoadCarDealer(string file, string name, string adress)
+    {
+        List<Car> cars = new();
+
+        var lines = File.ReadAllLines(file);
+
+        foreach(var line in lines)
+        {
+            Car car = new Car();
+            var items = line.Split(',');
+            car.RegNumber = items[0];
+            car.Brand = (CarBrand)int.Parse(items[1]);
+            car.ModelYear = int.Parse(items[2]);
+            cars.Add(car);
+        }
+
+        CarDealer pujcovna = new();
+        pujcovna.CarsForRent = cars;
+        pujcovna.Name = name;
+        pujcovna.Adress = adress;
+
+        return pujcovna;
+    }
+
+    public static void SaveCarsToFile(string file, List<Car> cars)
+    {
+        var lines = cars.Select(car => 
+                    $"{car.RegNumber},{(int)car.Brand},{car.ModelYear}");
+        File.WriteAllLines(file, lines);
+    }
+
+    public static List<Car> GetRandomCars(int count)
+    {
+        List<Car> cars = new();
+
+        for(int i = 0; i < count; i++)
+        {
+            var car = GetRandomCar();
+            cars.Add(car);
+        }
+
+        return cars;
+    }
     public static Car GetRandomCar()
     {
         Car car = new();

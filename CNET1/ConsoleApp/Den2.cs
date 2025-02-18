@@ -61,5 +61,35 @@ namespace ConsoleApp
             Console.WriteLine(car1.CarInfo());
             Console.WriteLine(car2.CarInfo());
         }
+
+        void cars()
+        {
+            var car1 = new Car("AXB0101", CarBrand.SKODA, 2021);
+            var car2 = new Car("BS1234", CarBrand.AUDI, 2005);
+
+            Person person = new()
+            {
+                Name = "Pavel Novák",
+                DateOfBirth = new DateOnly(2002, 3, 22),
+                Document = DocumentType.ID,
+                DocumentNumber = "1234512"
+            };
+
+            person.RentedCar = car1;
+
+            CarDealer pujcovna = new();
+            pujcovna.Name = "nejlepší půjčovna aut";
+
+            pujcovna.CarsForRent.Add(car1);
+            pujcovna.CarsForRent.Add(car2);
+
+            Console.WriteLine($"půjčovna jméno: {pujcovna.Name}");
+            Console.WriteLine($"půjčovna adresa: {pujcovna.Adress}");
+
+            foreach (var car in pujcovna.CarsForRent)
+            {
+                Console.WriteLine($"{car.CarInfo()}");
+            }
+        }
     }
 }

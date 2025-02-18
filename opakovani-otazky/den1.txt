@@ -1,0 +1,38 @@
+* Rozdíl mezi jazykem C# a .NET
+	c# - syntaxe	
+	.net / dotnet
+
+* Co je to proměnná
+	
+* Co znamená, že C# je "strongly typed" 
+	datové typy
+
+* Jaké znáte datové typy
+	DateTime, DateOnly, TimeOnly
+	string
+	int, byte, long
+	float, double, decimal
+	bool
+
+* klíčové slovo var
+	implicitní typování
+
+* Rozdíl mezi příkazem a výrazem, kam se píše středník
+	příkaz - operace
+	výraz - vyhodnotí se
+	x = 5 + a;
+
+* Co je to metoda / funkce, jak se deklaruje
+	navratový_typ nazev (typ param1, typ2 param2)
+	{
+		return;
+	}
+
+* klíčové slovo void
+	metoda nic nevrací
+	return pro ukončení metody
+	return;
+
+* Co je to Exception
+	try{}catch(Exception ex){}
+	

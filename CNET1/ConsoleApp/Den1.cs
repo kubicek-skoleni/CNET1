@@ -15,6 +15,9 @@ namespace ConsoleApp
 
             string DenVTydnu(int x)
             {
+                if (x < 0 || x > 6)
+                    throw new IndexOutOfRangeException();
+
                 return dny[x - 1];
             }
 
@@ -185,6 +188,7 @@ namespace ConsoleApp
             Console.WriteLine($"{zadani}: {vysledek.den}, vikend:{vysledek.vikend}");
 
         }
+    }
         enum DenVTydnu
         {
             PONDELI,
@@ -195,5 +199,6 @@ namespace ConsoleApp
             SOBOTA,
             NEDELE
         }
+    }
 
 

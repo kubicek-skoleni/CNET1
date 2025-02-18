@@ -47,17 +47,19 @@ int b = 50;
 Console.WriteLine($"a: {a}");
 Console.WriteLine($"b: {b}");
 
-ProcessNumber(a);
-ProcessNumber(b);
+a = ProcessNumber(a);
+b = ProcessNumber(b);
 
 Console.WriteLine($"a: {a}");
 Console.WriteLine($"b: {b}");
 
 
-void ProcessNumber(int input)
+int ProcessNumber(int input)
 {
     if (input < 5)
         input = 10;
+
+    return input;
 }
 
 

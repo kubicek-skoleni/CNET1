@@ -2,6 +2,9 @@
 {
     class Car
     {
+        public Car()
+        { }
+
         public Car(string regNumber)
         {
             RegNumber = regNumber;
@@ -13,7 +16,7 @@
             Brand = brand;
             ModelYear = year;
         }
-        public string RegNumber { get; }
+        public string RegNumber { get; set; }
 
         public CarBrand Brand { get; set; }
 
@@ -25,7 +28,7 @@
         }
     }
 
-    enum CarBrand
+    public enum CarBrand
     {
         SKODA,
         AUDI,

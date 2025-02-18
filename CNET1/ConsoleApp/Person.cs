@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarRental;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,8 @@ namespace ConsoleApp
         public string Phone { get; set; }
 
         public string Email { get; set; }
+
+        public Car RentedCar { get; set; }
     }
 
     enum DocumentType

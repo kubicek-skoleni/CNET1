@@ -14,7 +14,13 @@ Console.WriteLine(car1.CarInfo());
 Console.WriteLine(car2.CarInfo());
 
 
-
+// třídu pro osobu - Person
+// jméno
+// doklad číslo
+// doklad typ
+// datum narození
+// telefon
+// email
 
 
 

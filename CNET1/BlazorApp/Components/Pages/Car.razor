@@ -1,11 +1,22 @@
 ﻿@page "/car/{regnumber}"
 @using CarRental
 
-<h3>Car</h3>
+<h3>Auto - detail</h3>
+
+@if (carFound)
+{
+	<p>SPZ: @car.RegNumber</p>
+	<p>Brand: @car.Brand</p>
+	<p>Model: @car.ModelYear</p>
+}
+else
+{
+	<p>Nemohu najít auto dle spz.</p>
+}
 
 @code {
 
-	private Car car = new();
+	private CarRental.Car car = new();
 
 	private bool carFound = false;
 
@@ -21,6 +32,15 @@
 		pujcovna1 = CarDataset.LoadCarDealer(file1, "pujcovna 1", "");
 
 		// najdete z aut v autopujcovne 1 audo dle spz (regnumber)
+		var car_search = pujcovna1.CarsForRent
+		.Where(x => x.RegNumber == regnumber)
+		.FirstOrDefault();
 
+		if(car_search != null)
+		{
+			car = car_search;
+			carFound = true;
+		}
+		
 	}
 }

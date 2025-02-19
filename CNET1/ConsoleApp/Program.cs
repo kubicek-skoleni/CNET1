@@ -1,13 +1,13 @@
 ﻿using CarRental;
 using ConsoleApp;
 
-//CarDealer pujcovna1 =
-//        CarDataset.LoadCarDealer("pujcovna1.txt", "pujcovna 1", "");
+CarDealer pujcovna1 =
+        CarDataset.LoadCarDealer("pujcovna1.txt", "pujcovna 1", "");
 
-//CarDealer pujcovna2 =
-//        CarDataset.LoadCarDealer("pujcovna2.txt", "pujcovna 2", "");
+CarDealer pujcovna2 =
+        CarDataset.LoadCarDealer("pujcovna2.txt", "pujcovna 2", "");
 
-//Console.WriteLine("načteno");
+Console.WriteLine("načteno");
 
 //// kolik jakych znacek aut dohromady (vsechny pujcovny)
 
@@ -64,4 +64,15 @@ if(!string.IsNullOrEmpty(name))
 else
 {
     Console.WriteLine("xx");
+}
+
+
+string[] dny = ["pondělí", "úterý", "středa", "čtvrtek",
+                "pátek", "sobota", "neděle"];
+
+var result = dny.Select(word => new Car() { RegNumber = word});
+
+foreach(var num in result)
+{
+    Console.WriteLine(num);
 }

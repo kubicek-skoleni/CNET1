@@ -26,6 +26,11 @@
         {
             return $"auto, spz: {RegNumber}, rok výroby: {ModelYear}, značka: {Brand}";
         }
+
+        public override string ToString()
+        {
+            return CarInfo();
+        }
     }
 
     public enum CarBrand

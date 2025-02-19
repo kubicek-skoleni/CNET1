@@ -52,6 +52,16 @@ if(znacka != null)
 
 }
 
+double x = 5.8;
+
+x = Math.Round(x);
+isPositive((int)x);
+
+bool isPositive(int a)
+{
+    Console.WriteLine($"int a: {a}");
+    return a > 0;
+}
 
 Console.WriteLine("konec");
 
@@ -59,3 +69,8 @@ Console.WriteLine("konec");
 
 
 
+string xxx = string.Empty;
+if(string.IsNullOrEmpty(xxx))
+{
+
+}

@@ -24,5 +24,10 @@ namespace CarRental
         /// Auta k půjčení v této provozovně
         /// </summary>
         public List<Car> CarsForRent { get; set; } = new List<Car>();
+
+        public override string ToString()
+        {
+            return $"{Name} ({CarsForRent.Count()})";
+        }
     }
 }

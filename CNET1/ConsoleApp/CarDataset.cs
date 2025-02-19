@@ -10,6 +10,7 @@ class CarDataset
 {
     public static CarDealer LoadCarDealer(string file, string name, string adress)
     {
+                
         List<Car> cars = new();
 
         var lines = File.ReadAllLines(file);

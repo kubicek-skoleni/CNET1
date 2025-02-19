@@ -11,8 +11,8 @@ namespace ConsoleApp
     {
         void linq_ukoly()
         {
-            using CarRental;
-            using ConsoleApp;
+            //using CarRental;
+            //using ConsoleApp;
 
             CarDealer pujcovna1 =
                     CarDataset.LoadCarDealer("pujcovna1.txt", "pujcovna 1", "");

@@ -1,0 +1,50 @@
+﻿@page "/cars"
+@using CarRental
+<h3>Autopůjčovna 1 auta</h3>
+
+<table>
+	<tr>
+		<td>
+			SPZ
+		</td>
+		<td>
+			značka
+		</td>
+		<td>
+			model
+		</td>
+	</tr>
+	@foreach (var car in visible_cars)
+	{
+		<tr>
+			<td>
+				@car.RegNumber
+			</td>
+			<td>
+				@car.Brand
+			</td>
+			<td>
+				@car.ModelYear
+			</td>
+		</tr>
+	}
+
+</table>
+
+
+@code {
+
+	CarRental.CarDealer pujcovna1 = new();
+
+	List<CarRental.Car> visible_cars = new();
+
+	protected override void OnInitialized()
+	{
+		string datadir = @"C:\Users\Student\source\repos\kubicek-skoleni\CNET1\CNET1\ConsoleApp\bin\Debug\net9.0";
+		var file1 = Path.Combine(datadir, "pujcovna1.txt");
+		pujcovna1 = CarDataset.LoadCarDealer(file1, "pujcovna 1", "");
+
+		visible_cars = pujcovna1.CarsForRent.Take(5).ToList();
+	}
+
+}

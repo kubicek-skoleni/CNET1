@@ -29,7 +29,7 @@ namespace ConsoleApp
 
         public string Email { get; set; }
 
-        public Car RentedCar { get; set; }
+        public Car RentedCar { get; set; } = new Car();
     }
 
     enum DocumentType

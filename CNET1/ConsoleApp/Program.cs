@@ -1,46 +1,67 @@
 ﻿using CarRental;
+using ConsoleApp;
 
-CarDealer pujcovna1 =
-        CarDataset.LoadCarDealer("pujcovna1.txt", "pujcovna 1", "");
+//CarDealer pujcovna1 =
+//        CarDataset.LoadCarDealer("pujcovna1.txt", "pujcovna 1", "");
 
-CarDealer pujcovna2 =
-        CarDataset.LoadCarDealer("pujcovna2.txt", "pujcovna 2", "");
+//CarDealer pujcovna2 =
+//        CarDataset.LoadCarDealer("pujcovna2.txt", "pujcovna 2", "");
 
-Console.WriteLine("načteno");
+//Console.WriteLine("načteno");
 
-// kolik jakych znacek aut dohromady (vsechny pujcovny)
+//// kolik jakych znacek aut dohromady (vsechny pujcovny)
 
-CarBrand[] brands = (CarBrand[])Enum.GetValues(typeof(CarBrand));
+//CarBrand[] brands = (CarBrand[])Enum.GetValues(typeof(CarBrand));
 
-int sum = 0;
+//int sum = 0;
 
-foreach (var brand in brands)
+//foreach (var brand in brands)
+//{
+//    var cnt_1 = pujcovna1
+//                .CarsForRent.Where(car => car.Brand == brand)
+//                .Count();
+//    var cnt_2 = pujcovna2
+//                .CarsForRent.Where(car => car.Brand == brand)
+//                .Count();
+
+//    var cnt = cnt_1 + cnt_2;
+//    sum += cnt;
+
+//    Console.WriteLine($"{brand}: {cnt}");
+//}
+
+//Console.WriteLine(sum);
+
+/////////////////////////////////
+/////
+
+//var all_cars = pujcovna1.CarsForRent.Union(pujcovna2.CarsForRent);
+
+//var grouped = all_cars.GroupBy(x => x.Brand)
+//        .Select(x => new { Brand = x.Key, Count = x.Count() });
+
+//foreach(var brand_count in grouped)
+//{
+//    Console.WriteLine($"brand:{brand_count.Brand}, count{brand_count.Count}");
+//}
+
+
+int a = 0;
+int? aa = null;
+double b = 0;
+long c = 0;
+string name = null;
+string? ss = null;
+Car d = null;
+Person p = null;
+DateTime? dt;
+DateOnly? dd = null;
+
+if(!string.IsNullOrEmpty(name))
 {
-    var cnt_1 = pujcovna1
-                .CarsForRent.Where(car => car.Brand == brand)
-                .Count();
-    var cnt_2 = pujcovna2
-                .CarsForRent.Where(car => car.Brand == brand)
-                .Count();
-
-    var cnt = cnt_1 + cnt_2;
-    sum += cnt;
-
-    Console.WriteLine($"{brand}: {cnt}");
+    name.ToLower();
 }
-
-Console.WriteLine(sum);
-
-///////////////////////////////
-///
-
-var all_cars = pujcovna1.CarsForRent.Union(pujcovna2.CarsForRent);
-
-var grouped = all_cars.GroupBy(x => x.Brand)
-        .Select(x => new { Brand = x.Key, Count = x.Count() });
-
-foreach(var brand_count in grouped)
+else
 {
-    Console.WriteLine($"brand:{brand_count.Brand}, count{brand_count.Count}");
-    
+    Console.WriteLine("xx");
 }

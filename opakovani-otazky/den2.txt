@@ -1,0 +1,25 @@
+* Co je to třída a co do ní lze psát
+	šablona => vytváření instancí
+	vlastnosti (property)
+	metody
+	konstruktory
+
+* Vysvětlete klíčové slova static
+	static => globální / statitcká metoda (property)
+	vs instanční metoda
+	
+* Co je konstruktor a kolik jich třída může mít
+	"metoda" na vytvoření instance
+	new Car("xx",1,122)
+
+* Co je to null
+	null - prázdná hodnota u komplexních typů (třídy)
+	object nebyl inicializován / alokován
+	null reference exception
+
+* Který LINQ operátor změní počet prvků ale nechá jejich typ
+	WHERE
+
+*  Který LINQ operátor nechá stejný počet prvků,ale změní jejich typ 
+	SELECT
+

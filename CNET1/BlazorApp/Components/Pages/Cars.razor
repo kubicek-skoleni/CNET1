@@ -2,7 +2,7 @@
 @using CarRental
 <h3>Autopůjčovna 1 auta</h3>
 
-<table>
+<table class="table table-bordered">
 	<tr>
 		<td>
 			SPZ
@@ -31,12 +31,19 @@
 
 </table>
 
+<button class="btn btn-primary" @onclick="Load">načti dalších 5</button>
 
 @code {
 
 	CarRental.CarDealer pujcovna1 = new();
 
 	List<CarRental.Car> visible_cars = new();
+
+	void Load()
+	{
+		var addcars = pujcovna1.CarsForRent.Skip(visible_cars.Count()).Take(5);
+		visible_cars.AddRange(addcars);
+	}
 
 	protected override void OnInitialized()
 	{

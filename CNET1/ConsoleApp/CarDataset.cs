@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarRental;
 
-class CarDataset
+public class CarDataset
 {
     public static CarDealer LoadCarDealer(string file, string name, string adress)
     {

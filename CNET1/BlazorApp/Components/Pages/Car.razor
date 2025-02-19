@@ -1,0 +1,26 @@
+﻿@page "/car/{regnumber}"
+@using CarRental
+
+<h3>Car</h3>
+
+@code {
+
+	private Car car = new();
+
+	private bool carFound = false;
+
+	CarDealer pujcovna1 = new();
+
+	[Parameter]
+	public string regnumber { get; set; }
+
+	protected override void OnInitialized()
+	{
+		string datadir = @"C:\Users\Student\source\repos\kubicek-skoleni\CNET1\CNET1\ConsoleApp\bin\Debug\net9.0";
+		var file1 = Path.Combine(datadir, "pujcovna1.txt");
+		pujcovna1 = CarDataset.LoadCarDealer(file1, "pujcovna 1", "");
+
+		// najdete z aut v autopujcovne 1 audo dle spz (regnumber)
+
+	}
+}

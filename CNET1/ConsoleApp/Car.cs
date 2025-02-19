@@ -1,6 +1,6 @@
 ﻿namespace CarRental
 {
-    class Car
+    public class Car
     {
         public Car()
         { }
@@ -23,14 +23,11 @@
         public int ModelYear { get; set; }
 
         public string CarInfo()
-        {
-            return $"auto, spz: {RegNumber}, rok výroby: {ModelYear}, značka: {Brand}";
-        }
+            => $"auto, spz: {RegNumber}, rok výroby: {ModelYear}, značka: {Brand}";
+        
 
-        public override string ToString()
-        {
-            return CarInfo();
-        }
+        public override string ToString() => CarInfo();
+       
     }
 
     public enum CarBrand

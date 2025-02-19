@@ -9,7 +9,7 @@ namespace CarRental
     /// <summary>
     /// Autopůjčovna - místo kde půjčujeme auta
     /// </summary>
-    class CarDealer
+    public class CarDealer
     {
         //public CarDealer()
         //{

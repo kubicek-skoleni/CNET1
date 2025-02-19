@@ -1,0 +1,31 @@
+﻿@page "/"
+@using CarRental
+
+<PageTitle>Autopůjčovny</PageTitle>
+
+<h1>Naše autopůjčovny</h1>
+
+<h2>@pujcovna1.Name</h2>
+<p>počet aut: @pujcovna1.CarsForRent.Count()</p>
+
+<h2>@pujcovna2.Name</h2>
+<p>počet aut: @pujcovna2.CarsForRent.Count()</p>
+
+@code{
+	CarDealer pujcovna1 = new();
+
+	CarDealer pujcovna2 = new();
+
+	protected override void OnInitialized()
+	{
+		string datadir = @"C:\Users\Student\source\repos\kubicek-skoleni\CNET1\CNET1\ConsoleApp\bin\Debug\net9.0";
+		var file1 = Path.Combine(datadir, "pujcovna1.txt");
+		var file2 = Path.Combine(datadir, "pujcovna2.txt");
+
+		pujcovna1 =	CarDataset.LoadCarDealer(file1, "pujcovna 1", "");
+
+		pujcovna2 = CarDataset.LoadCarDealer(file2, "pujcovna 2", "");
+
+	}
+
+}

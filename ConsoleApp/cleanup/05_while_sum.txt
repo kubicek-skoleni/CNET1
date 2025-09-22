@@ -1,0 +1,16 @@
+Console.WriteLine("Zadej èislo nebo Q pro ukonèení");
+
+string line = Console.ReadLine();
+int sum = 0;
+
+while (line != "Q")
+{
+    int currentNumber = int.Parse(line);
+
+    sum = sum + currentNumber;
+    Console.WriteLine($"Aktuální souèet je {sum}");
+    Console.WriteLine("Napiš další èíslo nebo Q pro ukonèení");
+    line = Console.ReadLine();
+}
+
+Console.WriteLine($"KONEC, výsledná suma je: {sum}");

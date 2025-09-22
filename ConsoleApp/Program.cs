@@ -1,24 +1,16 @@
 ﻿
-string[] jmena = ["Jan Novák", "Petr Martinů", "Eva Stará", "Anna", "Karel"];
 
-jmena[2] = "Jana";
-string kdo = jmena[2];
+int[] cisla = [-1, -23, -30, -433, -5, -100];
 
-Console.WriteLine($"Na indexu 2 je: {kdo}");
-
-foreach(string jmeno in jmena)
-{
-    Console.WriteLine(jmeno);
-}
-
-int[] cisla = [1, 2, 3, 4, 5, 100];
-
-//sumu cisel v poli cisla a vypsat
-int sum = 0;
+//najit nejvetsi cislo a vypsat
+int zatim_nejvetsi = cisla[0];
 
 foreach (int cislo in cisla)
 {
-    sum += cislo;
+    if(cislo > zatim_nejvetsi)
+    {
+        zatim_nejvetsi = cislo;
+    }
 }
 
-Console.WriteLine($"Suma: {sum}");
+Console.WriteLine($"Nejvetsi cislo je: {zatim_nejvetsi}");

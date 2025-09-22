@@ -1,0 +1,43 @@
+Console.WriteLine("Zadej èíslo 1-7 a zmáèkni enter:");
+
+string? line = Console.ReadLine();
+
+int dayNumber = int.Parse(line);
+
+if(dayNumber == 1)
+    Console.WriteLine("Pondìlí");
+
+else if (dayNumber == 2)
+    Console.WriteLine("Úterý");
+
+else if (dayNumber == 3)
+    Console.WriteLine("Støeda");
+
+else if (dayNumber == 4)
+    Console.WriteLine("Ètvrtek");
+
+else if (dayNumber == 5)
+    Console.WriteLine("Pátek");
+
+else if (dayNumber == 6)
+    Console.WriteLine("Sobota");
+
+else if (dayNumber == 7)
+    Console.WriteLine("Nedìle");
+
+else
+    Console.WriteLine("Neplatné èíslo dne v týdnu.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+

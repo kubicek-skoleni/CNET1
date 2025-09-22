@@ -1,33 +1,38 @@
-﻿Console.WriteLine("Zadej číslo 1-7 a zmáčkni enter:");
+﻿using System.Linq.Expressions;
+
+Console.WriteLine("Zadej číslo 1-7 a zmáčkni enter:");
 
 string? line = Console.ReadLine();
 
 int dayNumber = int.Parse(line);
 
-if(dayNumber == 1)
-    Console.WriteLine("Pondělí");
-
-else if (dayNumber == 2)
-    Console.WriteLine("Úterý");
-
-else if (dayNumber == 3)
-    Console.WriteLine("Středa");
-
-else if (dayNumber == 4)
-    Console.WriteLine("Čtvrtek");
-
-else if (dayNumber == 5)
-    Console.WriteLine("Pátek");
-
-else if (dayNumber == 6)
-    Console.WriteLine("Sobota");
-
-else if (dayNumber == 7)
-    Console.WriteLine("Neděle");
-
-else
-    Console.WriteLine("Neplatné číslo dne v týdnu.");
-
+switch (dayNumber)
+{
+    case 1:
+        Console.WriteLine("Pondělí");
+        break;
+    case 2:
+        Console.WriteLine("Úterý");
+        break;
+    case 3:
+        Console.WriteLine("Středa");
+        break;
+    case 4:
+        Console.WriteLine("Čtvrtek");
+        break;
+    case 5:
+        Console.WriteLine("Pátek");
+        break;
+    case 6:
+        Console.WriteLine("Sobota");
+        break;
+    case 7:
+        Console.WriteLine("Neděle");
+        break;
+    default:
+        Console.WriteLine("číslo mimo rozsah!");
+        break;
+}
 
 
 

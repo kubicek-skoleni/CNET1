@@ -1,16 +1,15 @@
 ﻿
 
-int[] cisla = [-1, -23, -30, -433, -5, -100];
+double c = 25.0;
 
-//najit nejvetsi cislo a vypsat
-int zatim_nejvetsi = cisla[0];
+double f = FromCelsiusToFahrenheit(c);
 
-foreach (int cislo in cisla)
+Console.WriteLine($"hodnota C:{c} => F:{f}");
+
+double FromCelsiusToFahrenheit(double celsius)
 {
-    if(cislo > zatim_nejvetsi)
-    {
-        zatim_nejvetsi = cislo;
-    }
+    double fahrenheit = (celsius * 9 / 5) + 32;
+
+    return fahrenheit;
 }
 
-Console.WriteLine($"Nejvetsi cislo je: {zatim_nejvetsi}");

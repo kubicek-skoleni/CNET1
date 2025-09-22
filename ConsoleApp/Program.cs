@@ -1,5 +1,5 @@
 ﻿
-string[] jmena = ["Jan", "Petr", "Eva", "Anna", "Karel"];
+string[] jmena = ["Jan Novák", "Petr Martinů", "Eva Stará", "Anna", "Karel"];
 
 jmena[2] = "Jana";
 string kdo = jmena[2];
@@ -11,3 +11,14 @@ foreach(string jmeno in jmena)
     Console.WriteLine(jmeno);
 }
 
+int[] cisla = [1, 2, 3, 4, 5, 100];
+
+//sumu cisel v poli cisla a vypsat
+int sum = 0;
+
+foreach (int cislo in cisla)
+{
+    sum += cislo;
+}
+
+Console.WriteLine($"Suma: {sum}");

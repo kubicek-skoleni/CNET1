@@ -1,0 +1,49 @@
+        
+        using System.Linq.Expressions;
+
+Console.WriteLine("Zadej èíslo 1-7 a zmáèkni enter:");
+
+string? line = Console.ReadLine();
+
+int dayNumber = int.Parse(line);
+
+switch (dayNumber)
+{
+    case 1:
+        Console.WriteLine("Pondìlí");
+        break;
+    case 2:
+        Console.WriteLine("Úterý");
+        break;
+    case 3:
+        Console.WriteLine("Støeda");
+        break;
+    case 4:
+        Console.WriteLine("Ètvrtek");
+        break;
+    case 5:
+        Console.WriteLine("Pátek");
+        break;
+    case 6:
+        Console.WriteLine("Sobota");
+        break;
+    case 7:
+        Console.WriteLine("Nedìle");
+        break;
+    default:
+        Console.WriteLine("èíslo mimo rozsah!");
+        break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

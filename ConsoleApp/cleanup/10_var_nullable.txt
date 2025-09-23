@@ -1,0 +1,50 @@
+
+DateTime t = new(2025,9,23, 10, 0, 0);
+
+//while(DateTime.Now < t)
+//{
+//    Console.WriteLine($"Waiting for {t}...");
+//    Task.Delay(1000).Wait();
+//}
+
+
+t.AddHours(1);
+
+Math.Abs(-42);
+
+string s = "    Hello, World!";
+
+string upper = s.ToUpper();
+
+Console.WriteLine(upper);
+
+upper.ToLower();
+
+//s.Trim();
+
+Console.WriteLine(upper.Trim());
+
+var result = s.Trim().Substring(7, 5).ToUpper().Length;
+Console.WriteLine(result);
+
+var xx = 5.5m;
+
+var yy = t.AddHours(2);
+
+int[] cisla = [1, 2, 3, 4, 5, 100];
+
+var max = cisla.Max();
+
+int? nn = null;
+
+if(nn == null)
+{
+    Console.WriteLine("nn is null nemohu pokraèovat");
+}else
+{
+    Console.WriteLine($"nn má hodnotu {nn}");
+}
+
+
+
+

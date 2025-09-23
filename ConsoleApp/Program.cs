@@ -1,50 +1,94 @@
 ﻿
-DateTime t = new(2025,9,23, 10, 0, 0);
+//// index 5 neni
+//int[] numbers = [10, 20, 30, 40, 50];
+//numbers[5] = 100;
+//Console.WriteLine(numbers[5]);
 
-//while(DateTime.Now < t)
+//// chybi strednik
+//string name = "Alice";
+//int age = 25
+//Console.WriteLine(name + " is " + age);
+
+//// porovnani misto prirazeni
+//int score = 85;
+//if (score = 100)
 //{
-//    Console.WriteLine($"Waiting for {t}...");
-//    Task.Delay(1000).Wait();
+//    Console.WriteLine("Perfect!");
+//}
+
+// deleni nulou
+//int x = 10;
+//int y = 0;
+//int result = x / y;
+//Console.WriteLine(result);
+
+// index
+//string[] colors = ["red", "blue", "green"];
+//for (int i = 0; i <= colors.Length; i++)
+//{
+//    Console.WriteLine(colors[i]);
+//}
+
+//foreach(var color in colors)
+//{
+//    Console.WriteLine(color);
+//}
+
+// co se vypise
+
+//int a = 5;
+//int b = a;
+//a = 10;
+//Console.WriteLine(b);
+
+//string text = "Hello";
+//text = text + " World";
+//Console.WriteLine(text);
+
+//int x = 15;
+//if (x > 10)
+//    Console.WriteLine("Big");
+//if (x > 20)
+//    Console.WriteLine("Very Big");
+//else
+//    Console.WriteLine("Not Very Big");
+
+//int[] nums = [1, 2, 3];
+//nums[1] = 99;
+//Console.WriteLine(nums[0] + nums[1] + nums[2]);
+
+//bool isTrue = true;
+//bool isFalse = false;
+//Console.WriteLine(isTrue && isFalse);
+//Console.WriteLine(isTrue || isFalse);
+
+//int count = 0;
+//while (count < 3)
+//{
+//    Console.WriteLine(count);
+//    count++;
+//}
+
+////////
+///
+
+
+//int[] numbers = [1, 2, 3, 4, 5];
+//Console.WriteLine(numbers.Length);
+
+
+//string name = "Bob";
+//if (name = "Alice")
+//{
+//    Console.WriteLine("Hello Alice!");
+//}
+//else
+//{
+//    Console.WriteLine("Hello " + name + "!");
 //}
 
 
-t.AddHours(1);
-
-Math.Abs(-42);
-
-string s = "    Hello, World!";
-
-string upper = s.ToUpper();
-
-Console.WriteLine(upper);
-
-upper.ToLower();
-
-//s.Trim();
-
-Console.WriteLine(upper.Trim());
-
-var result = s.Trim().Substring(7, 5).ToUpper().Length;
-Console.WriteLine(result);
-
-var xx = 5.5m;
-
-var yy = t.AddHours(2);
-
-int[] cisla = [1, 2, 3, 4, 5, 100];
-
-var max = cisla.Max();
-
-int? nn = null;
-
-if(nn == null)
-{
-    Console.WriteLine("nn is null nemohu pokračovat");
-}else
-{
-    Console.WriteLine($"nn má hodnotu {nn}");
-}
-
-
-
-
+//int x = 5;
+//int y = 2;
+//Console.WriteLine(x / y);
+//Console.WriteLine(5.0 / 2.0);

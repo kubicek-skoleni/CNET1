@@ -34,3 +34,17 @@ var yy = t.AddHours(2);
 int[] cisla = [1, 2, 3, 4, 5, 100];
 
 var max = cisla.Max();
+
+int? nn = null;
+
+if(nn == null)
+{
+    Console.WriteLine("nn is null nemohu pokračovat");
+}else
+{
+    Console.WriteLine($"nn má hodnotu {nn}");
+}
+
+
+
+

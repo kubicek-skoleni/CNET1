@@ -1,14 +1,20 @@
-﻿
-// prace se soubory 
+﻿using ConsoleApp.Model;
 
-File.AppendAllText(@"C:\tmp\test.txt", "Hello, World!");
+var car1 = new Car();
 
-File.AppendAllText(@"C:\tmp\test.txt", "Hello, World!");
+car1.PlateNumber = "ABC123";
+car1.YearOfProduction = 2020;
+car1.Brand = "Toyota";
+car1.Model = "Corolla";
+car1.Color = "Red";
 
-string text = File.ReadAllText(@"C:\tmp\test.txt");
+var car2 = new Car
+{
+    PlateNumber = "XYZ789",
+    YearOfProduction = 2019,
+    Brand = "Honda",
+    Model = "Civic",
+    Color = "Blue"
+};
 
-string[] lines = File.ReadAllLines(@"C:\tmp\test.txt");
-
-// random
-
-int rnd = Random.Shared.Next(1, 100);
+car2.Color = "Black";

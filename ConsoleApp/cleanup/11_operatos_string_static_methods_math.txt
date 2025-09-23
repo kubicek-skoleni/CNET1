@@ -1,0 +1,60 @@
+
+
+//using System.Security.Cryptography.X509Certificates;
+
+//DateTime now = DateTime.Now;
+
+//DateTime dob = new(1990, 5, 1);
+
+//TimeSpan age = now - dob;
+
+//Console.WriteLine(age.TotalMinutes);
+
+//var thousand_minutes = TimeSpan.FromMinutes(990);
+
+//Console.WriteLine($" 990 minut je {thousand_minutes.TotalHours} hodin");
+
+//var rounded = Math.Round(thousand_minutes.TotalHours, 0, MidpointRounding.ToPositiveInfinity);
+
+//Console.WriteLine($"1000 minut je {rounded} hodin");
+
+//var min = Math.Min(30, rounded);
+//Console.WriteLine(min);
+
+//var result = Math.Min(23.5, 10);
+
+////Math.Min(10, 5, 3);
+
+//Console.WriteLine(result);
+
+//// vytvoøte metodu, která vrátí nejmenší èíslo ze tøí zadaných èísel
+
+//var moje_min = MinOfThree(10, 5, 3);
+
+//Console.WriteLine($"moje min: {moje_min}");
+
+//int MinOfThree(int a, int b, int c)
+//{
+//    return Math.Min(a, Math.Min(b, c));
+//}
+
+//string s = "";
+
+//if (!string.IsNullOrEmpty(s))
+//{
+//    Console.WriteLine("mám nìjaký obsah v s");
+//}
+
+//string sssss = string.Empty;
+
+
+string[] jmena = ["Jan", "Petr", "Eva", "Anna", "Karel"];
+
+//foreach (var jmeno in jmena)
+//{
+//    Console.Write(jmeno + ", ");
+//}
+
+string spojeny = string.Join(" + ", jmena);
+
+Console.WriteLine(spojeny);

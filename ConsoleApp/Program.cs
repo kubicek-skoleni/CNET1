@@ -1,1 +1,14 @@
 ﻿
+// prace se soubory 
+
+File.AppendAllText(@"C:\tmp\test.txt", "Hello, World!");
+
+File.AppendAllText(@"C:\tmp\test.txt", "Hello, World!");
+
+string text = File.ReadAllText(@"C:\tmp\test.txt");
+
+string[] lines = File.ReadAllLines(@"C:\tmp\test.txt");
+
+// random
+
+int rnd = Random.Shared.Next(1, 100);

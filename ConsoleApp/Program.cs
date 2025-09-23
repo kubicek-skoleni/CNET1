@@ -1,82 +1,36 @@
-﻿int vek = Age(2001);
-Console.WriteLine($"Age(2001): {vek}");
-int Age(int year)
-{
-    int currentYear = DateTime.Now.Year;
-    int age = currentYear - year;
-    return age;
-}
+﻿
+DateTime t = new(2025,9,23, 10, 0, 0);
 
-int Add(int a, int b)
-{
-    return a + b;
-}
+//while(DateTime.Now < t)
+//{
+//    Console.WriteLine($"Waiting for {t}...");
+//    Task.Delay(1000).Wait();
+//}
 
-//string jm = "Pavel";
-//string prjm = "Novák";
-//string celeJmeno = CeleJmeno(jm, prjm);
 
-Console.WriteLine($"cele jmeno: {CeleJmeno("Pavel","Novák")}");
+t.AddHours(1);
 
-string CeleJmeno(string jmeno, string prijmeni)
-{
-    return $"{jmeno} {prijmeni}";
-}
+Math.Abs(-42);
 
-//metodu ktera vrati vetsi ze dvou cisel
+string s = "    Hello, World!";
 
-int Vetsi(int prvni, int druhe)
-{
-    if(prvni > druhe)
-    {
-        return prvni;
-    }
-    else
-    {
-        return druhe;
-    }
-}
+string upper = s.ToUpper();
 
-bool IsPasswrodValid(string password)
-{
-    if(password.Length < 8)
-    {
-        return false;
-    }
-    if(!password.Any(char.IsUpper))
-    {
-        return false;
-    }
-    if(!password.Any(char.IsLower))
-    {
-        return false;
-    }
-    if(!password.Any(char.IsDigit))
-    {
-        return false;
-    }
-    return true;
-}
+Console.WriteLine(upper);
 
-double Square(double side)
-{
-    return side * side;
-}
+upper.ToLower();
 
-int Pocet(string slovo)
-{
-    return slovo.Length;
-}
+//s.Trim();
 
-int MinutesToSecods(int minutes)
-{
-    return minutes * 60;
-}
+Console.WriteLine(upper.Trim());
 
-(int minutes, int secons) SecondsToMinutes(int seconds)
-{
-    int minutes = seconds / 60;
-    int secons = seconds % 60;
-    return (minutes, secons);
-}
+var result = s.Trim().Substring(7, 5).ToUpper().Length;
+Console.WriteLine(result);
 
+var xx = 5.5m;
+
+var yy = t.AddHours(2);
+
+int[] cisla = [1, 2, 3, 4, 5, 100];
+
+var max = cisla.Max();

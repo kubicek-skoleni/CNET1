@@ -1,27 +1,6 @@
-﻿using ConsoleApp.Model;
-
-var car1 = new Car();
-
-car1.PlateNumber = "ABC123";
-car1.YearOfProduction = 2020;
-car1.Brand = "Toyota";
-car1.Model = "Corolla";
-car1.Color = "Red";
-car1.AddKm(1000);
-Console.WriteLine($"car1.Mileage: {car1.Mileage}");
-car1.AddKm(1500);
-Console.WriteLine($"car1.Mileage: {car1.Mileage}");
-
-var car2 = new Car
-{
-    PlateNumber = "XYZ789",
-    YearOfProduction = 2019,
-    Brand = "Honda",
-    Model = "Civic",
-    Color = "Blue"
-};
-
-car2.Color = "Black";
-
-car1.PrintInfo();
-car2.PrintInfo();
+﻿// třídu Student
+// jméno
+// datum narození
+// pohlaví
+// třida
+// info do konzole

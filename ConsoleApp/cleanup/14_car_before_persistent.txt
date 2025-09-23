@@ -1,4 +1,3 @@
-﻿
 namespace ConsoleApp.Model
 {
     public class Car
@@ -8,28 +7,11 @@ namespace ConsoleApp.Model
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Color { get; set; }
-
-        public double Mileage 
-        {
-            get
-            {
-                if(!File.Exists(PlateNumber + ".txt"))
-                {
-                    File.WriteAllText(PlateNumber + ".txt", "0");
-                }
-
-                string kms_string = File.ReadAllText(PlateNumber + ".txt");
-                double kms = double.Parse(kms_string);
-                return kms;
-            }
-        }
-
+        public double Mileage { get; private set; }
         public void AddKm(double km)
         {
-            var new_mileage = Mileage + km;
-            File.WriteAllText(PlateNumber + ".txt", new_mileage.ToString());
+            Mileage += km;
         }
-
         public void PrintInfo()
         {
             Console.WriteLine();

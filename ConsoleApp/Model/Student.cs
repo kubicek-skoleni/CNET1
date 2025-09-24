@@ -11,7 +11,15 @@ namespace ConsoleApp.Model
 {
     public class Student
     {
+        public Student() { }
 
+        public Student(string _name, DateOnly _birthDate, Gender _gender, GradeName _grade)
+        {
+            Name = _name;
+            BirthDate = _birthDate;
+            Gender = _gender;
+            ClassName = _grade;
+        }
         public string Name { get; set; } = "";
         public DateOnly BirthDate { get; set; } = new DateOnly(2000, 1, 1);
 

@@ -25,5 +25,11 @@ namespace WpfApp
             var mover_window = new BasicMover();
             mover_window.Show();
         }
+
+        private void btnMainWindowLauch_Click(object sender, RoutedEventArgs e)
+        {
+            var new_window = new MainWindow();
+            new_window.Show();
+        }
     }
 }

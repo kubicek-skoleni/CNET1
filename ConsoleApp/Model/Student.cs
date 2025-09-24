@@ -1,14 +1,8 @@
-﻿// třídu Student
-// jméno
-// datum narození
-// pohlaví
-// třida
-// info do konzole
-
-using System.Security.Cryptography.X509Certificates;
-
-namespace ConsoleApp.Model
+﻿namespace ConsoleApp.Model
 {
+    /// <summary>
+    /// Student student
+    /// </summary>
     public class Student
     {
         public Student() { }
@@ -25,13 +19,24 @@ namespace ConsoleApp.Model
 
         public Gender Gender { get; set; }
 
+        /// <summary>
+        /// třida (daná enumem)
+        /// </summary>
         public GradeName ClassName { get; set; }
+
+        public string StringInfo()
+        {
+            return $"{Name} {BirthDate} {Gender}";
+        }
 
         public void PrintInfo()
         {
             Console.WriteLine($"{Name} ({BirthDate.ToString("dd. MM. yyyy")}) {GetGradeName()}");
         }
 
+        /// <summary>
+        /// Pěkná textová reprezentace třídy
+        /// </summary>
         public string GetGradeName()
         {
             return ClassName.ToString().Replace("_", "").Insert(1, ".");

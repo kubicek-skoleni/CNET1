@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Background="LightSkyBlue"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,0,-49">
         <Button x:Name="btnMain" Content="Počítadlo" 
                 Margin="213,75,400,0" VerticalAlignment="Top" Height="49" Background="#FF8DEC7A" BorderBrush="#FFE22E2E" Click="btnMain_Click" FontSize="20" />
         <TextBlock x:Name="txbInfo" HorizontalAlignment="Left" Margin="375,146,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="42" Width="425" FontSize="24"/>
@@ -17,6 +17,16 @@
         <Button x:Name="btnHumanizer" Content="Test Humanizer
                 " HorizontalAlignment="Left" Margin="213,348,0,0" VerticalAlignment="Top" Width="187" Height="36" Click="btnHumanizer_Click" FontSize="20"/>
         <TextBlock x:Name="txbHumanizer" HorizontalAlignment="Left" Height="36" Margin="422,348,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="378" FontSize="24"/>
+        <TextBox x:Name="txtJmeno" HorizontalAlignment="Left" Margin="556,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" FontSize="20"/>
+        <Label Content="Jméno" HorizontalAlignment="Left" Margin="488,0,0,0" VerticalAlignment="Center" Width="100" FontSize="20"/>
+        <ListBox HorizontalAlignment="Left" Height="93" Margin="505,250,0,0" VerticalAlignment="Top" Width="178" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ComboBox HorizontalAlignment="Left" Margin="544,358,0,0" VerticalAlignment="Top" Width="161"/>
+        <Button Click="btnStudenForm_Click" 
+                x:Name="btnStudenForm" 
+                Content="Student Form" 
+                HorizontalAlignment="Left" 
+                Margin="217,389,0,0" VerticalAlignment="Top" 
+                Width="183" Height="40" Background="#FFF3EFC3"/>
 
     </Grid>
 </Window>

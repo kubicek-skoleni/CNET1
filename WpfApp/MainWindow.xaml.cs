@@ -46,5 +46,11 @@ namespace WpfApp
                 //"student".ToQuantity(5) ;
             txbHumanizer.Text = result;
         }
+
+        private void btnStudenForm_Click(object sender, RoutedEventArgs e)
+        {
+            var student_form = new StudentForm();
+            student_form.Show();
+        }
     }
 }

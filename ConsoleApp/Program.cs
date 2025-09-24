@@ -10,6 +10,8 @@ var stud1 = new Student()
     ClassName = GradeName._9A,
 };
 
+stud1.GetGradeName();
+
 var stud2 = new Student("Petr Svoboda",
                 new DateOnly(2004, 3, 15),
                 Gender.MALE,

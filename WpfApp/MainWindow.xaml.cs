@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Globalization;
+using System.Windows;
+using Humanizer;
 
 namespace WpfApp
 {
@@ -11,13 +13,18 @@ namespace WpfApp
 
         public MainWindow()
         {
+            
             InitializeComponent();
+
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("cs-CZ");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("cs-CZ");
+
         }
 
         private void btnMain_Click(object sender, RoutedEventArgs e)
         {
             coutner++;
-            txbInfo.Text = coutner.ToString();
+            txbInfo.Text = coutner.ToWords(new CultureInfo("cs-CZ"));
         }
 
         private void btnBasicMover_Click(object sender, RoutedEventArgs e)
@@ -30,6 +37,14 @@ namespace WpfApp
         {
             var new_window = new MainWindow();
             new_window.Show();
+        }
+
+        private void btnHumanizer_Click(object sender, RoutedEventArgs e)
+        {
+            var result = (new DateTime(2024, 6, 1, 12, 0, 0)).Humanize(culture: new CultureInfo("cs-CZ"));
+                //DateTime.Now.AddHours(-1).Humanize(culture: new CultureInfo("cs-CZ"));
+                //"student".ToQuantity(5) ;
+            txbHumanizer.Text = result;
         }
     }
 }

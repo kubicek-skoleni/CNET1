@@ -9,11 +9,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnMain" Content="Počítadlo" 
-                Margin="213,73,400,0" VerticalAlignment="Top" Height="49" Background="#FF8DEC7A" BorderBrush="#FFE22E2E" Click="btnMain_Click" FontSize="20" />
-        <TextBlock x:Name="txbInfo" HorizontalAlignment="Left" Margin="182,80,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="58" Width="31" FontSize="24"/>
-        <Button x:Name="btnBasicMover" Click="btnBasicMover_Click" Content="Basic Mover" HorizontalAlignment="Left" Margin="217,143,0,0" VerticalAlignment="Top" Height="55" Width="183" Background="#FFDCB6F3"/>
-        <Button Click="btnMainWindowLauch_Click" x:Name="btnMainWindowLauch" Content="Main Window" HorizontalAlignment="Left" Margin="217,217,0,0" VerticalAlignment="Top" Width="183" Height="40" Background="#FFF3EFC3"/>
-        <TextBlock HorizontalAlignment="Left" Margin="20,80,0,0" TextWrapping="Wrap" Text="Počet kliknutí:" VerticalAlignment="Top" FontSize="24" Foreground="#FFE84242"/>
+                Margin="213,75,400,0" VerticalAlignment="Top" Height="49" Background="#FF8DEC7A" BorderBrush="#FFE22E2E" Click="btnMain_Click" FontSize="20" />
+        <TextBlock x:Name="txbInfo" HorizontalAlignment="Left" Margin="375,146,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="42" Width="425" FontSize="24"/>
+        <Button x:Name="btnBasicMover" Click="btnBasicMover_Click" Content="Basic Mover" HorizontalAlignment="Left" Margin="217,209,0,0" VerticalAlignment="Top" Height="55" Width="183" Background="#FFDCB6F3"/>
+        <Button Click="btnMainWindowLauch_Click" x:Name="btnMainWindowLauch" Content="Main Window" HorizontalAlignment="Left" Margin="217,283,0,0" VerticalAlignment="Top" Width="183" Height="40" Background="#FFF3EFC3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="213,146,0,0" TextWrapping="Wrap" Text="Počet kliknutí:" VerticalAlignment="Top" FontSize="24" Foreground="#FFE84242"/>
+        <Button x:Name="btnHumanizer" Content="Test Humanizer
+                " HorizontalAlignment="Left" Margin="213,348,0,0" VerticalAlignment="Top" Width="187" Height="36" Click="btnHumanizer_Click" FontSize="20"/>
+        <TextBlock x:Name="txbHumanizer" HorizontalAlignment="Left" Height="36" Margin="422,348,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="378" FontSize="24"/>
 
     </Grid>
 </Window>

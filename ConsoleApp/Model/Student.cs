@@ -11,8 +11,9 @@ namespace ConsoleApp.Model
 {
     public class Student
     {
-        public string Name { get; set; }
-        public DateOnly BirthDate { get; set; }
+
+        public string Name { get; set; } = "";
+        public DateOnly BirthDate { get; set; } = new DateOnly(2000, 1, 1);
 
         public Gender Gender { get; set; }
 
